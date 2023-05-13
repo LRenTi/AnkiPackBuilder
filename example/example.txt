@@ -1,0 +1,9 @@
+#What is the capital of France?
+Paris
+#List three primary colors.
+- Red
+- Blue
+- Yellow
+
+#Explain the process of photosynthesis.
+Photosynthesis is the process by which green plants and some other organisms use sunlight to synthesize foods with the help of chlorophyll. It involves the conversion of carbon dioxide and water into glucose and oxygen, using light energy.
