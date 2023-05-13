@@ -12,29 +12,29 @@ class AnkiPackBuilderGUI:
         self.deck_name = None
 
         self.input_file_label = tk.Label(self.window, text="Input File:")
-        self.input_file_label.pack()
+        self.input_file_label.pack(anchor='w')
 
         self.input_file_button = tk.Button(self.window, text="Select Input File", command=self.select_input_file)
-        self.input_file_button.pack()
+        self.input_file_button.pack(anchor='w')
 
         self.deck_name_label = tk.Label(self.window, text="Deck Name:")
-        self.deck_name_label.pack()
+        self.deck_name_label.pack(anchor='w')
 
         self.deck_name_entry = tk.Entry(self.window)
-        self.deck_name_entry.pack()
+        self.deck_name_entry.pack(anchor='w')
 
         self.generate_button = tk.Button(self.window, text="Generate Anki Deck", command=self.generate_anki_deck)
-        self.generate_button.pack()
+        self.generate_button.pack(anchor='w')
 
         version_label_text = f"Version: {get_version()}"
         version_label = tk.Label(self.window, text=version_label_text, anchor='sw')
-        version_label.pack(side='left')
+        version_label.pack(side='left', fill='both')
 
         author_label = tk.Label(self.window, text="by LRenTi", anchor='se')
-        author_label.pack(side='right')
+        author_label.pack(side='right', fill='both')
 
         self.success_label = tk.Label(self.window, text="")
-        self.success_label.pack()
+        self.success_label.pack(anchor='w')
 
     def select_input_file(self):
         self.input_file_path = filedialog.askopenfilename(filetypes=[('Text Files', '*.txt')], title="Select Input File")

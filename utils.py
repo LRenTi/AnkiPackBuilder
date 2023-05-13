@@ -3,7 +3,7 @@ import urllib.request
 import json
 
 VERSION = "1.0.0"
-GITHUB_RELEASES_API = "https://api.github.com/repos/your-username/your-repo/releases/latest"
+GITHUB_RELEASES_API = "https://api.github.com/repos/LRenTi/AnkiPackBuilder/releases/latest"
 
 def get_version():
     return VERSION
