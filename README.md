@@ -46,6 +46,12 @@ Make sure your input file follows the specified format:
 
 6. Open Anki and import the generated .apkg file to start using your new deck.
 
+### Prompt
+A prompt for ChatGPT to create Flashcards in the AnkiPackbuilder Format about the topic Bilirubin. <br>
+
+        Create flashcards for me. The questions should start with a # and immediately after that, the question should follow. 
+        The answer begins on the next line. Everything should be in a .txt code file. Create 5 Flashcards about Bilirubin.
+
 ## Contributing
 
 Contributions are welcome! If you have any ideas, suggestions, or bug reports, please open an issue.
