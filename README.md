@@ -9,9 +9,12 @@ AnkiPackBuilder is a simple tool that allows you to easily create Anki decks fro
 - Customizable deck name for better organization.
 - User-friendly GUI for easy interaction.
 
-## How to use AnkiPackBuilder
+## How to build the .txt file
 
-1. Prepare a text file with your questions and answers in the following format:
+Make sure your input file follows the specified format:
+- Each question starts with a '#' symbol, followed by the question text.
+- The answer text immediately follows the question, starting from the next line.
+- Questions and answers are separated by empty lines.
 
         #Question 1
         Answer 1
@@ -22,7 +25,11 @@ AnkiPackBuilder is a simple tool that allows you to easily create Anki decks fro
         Multiple lines possible
 
     **or look into the example folder and look at the .txt file**<br>
+  
 
+## Usage
+
+1. Prepare a text file with your questions and answers in the specified format.
 
 2. Run the APB.exe file.
 
