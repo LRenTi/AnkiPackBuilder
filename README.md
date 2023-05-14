@@ -30,8 +30,15 @@ Make sure your input file follows the specified format:
         .
 
     **or look into the example folder and look at the .txt file**<br>
-  
+    
+### ChatGPT
+A prompt for ChatGPT to create Flashcards in the AnkiPackbuilder Format about the topic Bilirubin. <br>
 
+	Create flashcards for me. The format you should use is as follows: Put a # before the question, followed immediately by the question itself. The answer should be written beneath the question and can span multiple lines. Everything should be in a .txt code file. You don't need to write "question" or "answer. 
+        Here's an example card in the format you should follow:
+        #What is the color of the sky?
+        Blue
+	
 ## Usage
 
 1. Prepare a text file with your questions and answers in the specified format.
@@ -46,13 +53,6 @@ Make sure your input file follows the specified format:
 
 6. Open Anki and import the generated .apkg file to start using your new deck.
 
-### Prompt
-A prompt for ChatGPT to create Flashcards in the AnkiPackbuilder Format about the topic Bilirubin. <br>
-
-	Create flashcards for me. The format you should use is as follows: Put a # before the question, followed immediately by the question itself. The answer should be written beneath the question and can span multiple lines. Everything should be in a .txt code file. You don't need to write "question" or "answer. 
-        Here's an example card in the format you should follow:
-        #What is the color of the sky?
-        Blue
 ## Contributing
 
 Contributions are welcome! If you have any ideas, suggestions, or bug reports, please open an issue.
