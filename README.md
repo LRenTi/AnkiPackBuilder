@@ -29,7 +29,7 @@ Make sure your input file follows the specified format:
         .
         .
 
-    **or look into the example folder and look at the .txt file**<br>
+    **or look into the example folder and look at the [.txt file](https://github.com/LRenTi/AnkiPackBuilder/blob/main/example/example.txt).**<br>
     
 ### ChatGPT
 A prompt for ChatGPT to create Flashcards in the AnkiPackBuilder Format about the topic Bilirubin. <br>
