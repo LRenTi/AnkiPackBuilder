@@ -1,5 +1,6 @@
 import genanki
 from anki_model import APBModel
+from file_manager import FileManager
 
 class DeckBuilder:
     def __init__(self, input_file_path, deck_name):

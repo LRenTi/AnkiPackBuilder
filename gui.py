@@ -1,40 +1,40 @@
 import tkinter as tk
 from tkinter import filedialog
 from deck_builder import DeckBuilder
-from utils import get_version
+from utils import get_version_number
 
 class AnkiPackBuilderGUI:
     def __init__(self):
         self.window = tk.Tk()
         self.window.title("Anki Pack Builder")
         self.window.geometry("400x300")
+
+        version_label = tk.Label(self.window, text="Version: " + get_version_number())
+        version_label.place(x=10, y=280)
+
+        developer_label = tk.Label(self.window, text="by LRenTi")
+        developer_label.place(x=310, y=280)
+
         self.input_file_path = None
         self.deck_name = None
 
         self.input_file_label = tk.Label(self.window, text="Input File:")
-        self.input_file_label.pack(anchor='w')
+        self.input_file_label.pack()
 
         self.input_file_button = tk.Button(self.window, text="Select Input File", command=self.select_input_file)
-        self.input_file_button.pack(anchor='w')
+        self.input_file_button.pack()
 
         self.deck_name_label = tk.Label(self.window, text="Deck Name:")
-        self.deck_name_label.pack(anchor='w')
+        self.deck_name_label.pack()
 
         self.deck_name_entry = tk.Entry(self.window)
-        self.deck_name_entry.pack(anchor='w')
+        self.deck_name_entry.pack()
 
         self.generate_button = tk.Button(self.window, text="Generate Anki Deck", command=self.generate_anki_deck)
-        self.generate_button.pack(anchor='w')
-
-        version_label_text = f"Version: {get_version()}"
-        version_label = tk.Label(self.window, text=version_label_text, anchor='sw')
-        version_label.pack(side='left', fill='both')
-
-        author_label = tk.Label(self.window, text="by LRenTi", anchor='se')
-        author_label.pack(side='right', fill='both')
+        self.generate_button.pack()
 
         self.success_label = tk.Label(self.window, text="")
-        self.success_label.pack(anchor='w')
+        self.success_label.pack()
 
     def select_input_file(self):
         self.input_file_path = filedialog.askopenfilename(filetypes=[('Text Files', '*.txt')], title="Select Input File")

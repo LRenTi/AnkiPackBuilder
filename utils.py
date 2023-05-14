@@ -1,20 +1,24 @@
+from tkinter import filedialog
 import tkinter.messagebox as messagebox
-import urllib.request
-import json
+import requests
 
-VERSION = "1.0.0"
-GITHUB_RELEASES_API = "https://api.github.com/repos/LRenTi/AnkiPackBuilder/releases/latest"
+class FileManager:
+    @staticmethod
+    def select_input_file():
+        return filedialog.askopenfilename(filetypes=[('Text Files', '*.txt')], title="Select Input File")
 
-def get_version():
-    return VERSION
+    @staticmethod
+    def save_output_file():
+        return filedialog.asksaveasfilename(defaultextension=".apkg", filetypes=[('Anki Deck Files', '*.apkg')],
+                                            title="Save Anki Deck")
 
-def check_for_updates():
-    try:
-        with urllib.request.urlopen(GITHUB_RELEASES_API) as url:
-            data = json.loads(url.read().decode())
-            latest_version = data["tag_name"]
-            if latest_version != VERSION:
-                message = f"A new version ({latest_version}) is available! Please update the program."
-                messagebox.showinfo("Update Available", message)
-    except Exception as e:
-        print("Error checking for updates:", str(e))
+def get_version_number():
+    return "v0.1"  # Replace with your actual version number
+
+def check_for_update():
+    current_version = get_version_number()
+    response = requests.get("https://api.github.com/repos/LRenTi/AnkiPackBuilder/releases/latest")
+    latest_version = response.json()["tag_name"]
+
+    if latest_version != current_version:
+        messagebox.showinfo("Update Available", f"A new version ({latest_version}) of Anki Pack Builder is available. Please update to the latest version.")
