@@ -1,4 +1,5 @@
-# AnkiPackBuilder
+# AnkiPackBuilder       [![GitHub tag](https://img.shields.io/github/tag/LRenTi/AnkiPackBuilder?include_prereleases=&sort=semver)](https://github.com/LRenTi/AnkiPackBuilder/releases/)[![License](https://img.shields.io/badge/License-MIT-blue)](#license)
+
 
 AnkiPackBuilder is a simple tool that allows you to easily create Anki decks from a text file. With AnkiPackBuilder, you can efficiently convert your collection of questions and answers into interactive flashcards for effective learning and revision.
 
@@ -45,6 +46,11 @@ Make sure your input file follows the specified format:
 
 Contributions are welcome! If you have any ideas, suggestions, or bug reports, please open an issue or submit a pull request.
 
+## Download
+
+Windows: [Download](https://github.com/LRenTi/AnkiPackBuilder/releases/latest)<br>
+MacOS: Under Development
+
 ## License
 
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more details.
+This project is released under [MIT](/LICENSE.md) by [@LRenTi](https://github.com/LRenTi). See the [LICENSE](LICENSE.md) file for more details.
