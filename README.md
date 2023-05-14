@@ -48,9 +48,8 @@ Contributions are welcome! If you have any ideas, suggestions, or bug reports, p
 
 ## Download
 
-Windows: [Download](https://github.com/LRenTi/AnkiPackBuilder/releases/latest)<br>
-MacOS: Under Development
-
+Windows: [Download](https://github.com/LRenTi/AnkiPackBuilder/releases/latest) `.zip`<br>
+MacOS: [Download](https://github.com/LRenTi/AnkiPackBuilder/releases/latest) `.dmg`
 ## License
 
 This project is released under [MIT](/LICENSE.md) by [@LRenTi](https://github.com/LRenTi). See the [LICENSE](LICENSE.md) file for more details.
