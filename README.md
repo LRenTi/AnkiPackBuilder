@@ -24,6 +24,10 @@ Make sure your input file follows the specified format:
         #Question 2
         Answer 2
         Multiple lines possible
+        
+        .
+        .
+        .
 
     **or look into the example folder and look at the .txt file**<br>
   
