@@ -7,13 +7,13 @@ class AnkiPackBuilderGUI:
     def __init__(self):
         self.window = tk.Tk()
         self.window.title("Anki Pack Builder")
-        self.window.geometry("400x300")
+        self.window.geometry("400x200")
 
         version_label = tk.Label(self.window, text="Version: " + get_version_number())
-        version_label.place(x=10, y=280)
+        version_label.place(x=10, y=180)
 
         developer_label = tk.Label(self.window, text="by LRenTi")
-        developer_label.place(x=310, y=280)
+        developer_label.place(x=310, y=180)
 
         self.input_file_path = None
         self.deck_name = None
