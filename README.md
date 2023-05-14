@@ -49,9 +49,10 @@ Make sure your input file follows the specified format:
 ### Prompt
 A prompt for ChatGPT to create Flashcards in the AnkiPackbuilder Format about the topic Bilirubin. <br>
 
-        Create flashcards for me. The questions should start with a # and immediately after that, the question should follow. 
-        The answer begins on the next line. Everything should be in a .txt code file. Create 5 Flashcards about Bilirubin.
-
+	Create flashcards for me. The format you should use is as follows: Put a # before the question, followed immediately by the question itself. The answer should be written beneath the question and can span multiple lines. Everything should be in a .txt code file. You don't need to write "question" or "answer. 
+        Here's an example card in the format you should follow:
+        #What is the color of the sky?
+        Blue
 ## Contributing
 
 Contributions are welcome! If you have any ideas, suggestions, or bug reports, please open an issue.
