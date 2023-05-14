@@ -67,3 +67,4 @@ class AnkiPackBuilderGUI:
 
     def start(self):
         self.window.mainloop()
+        
