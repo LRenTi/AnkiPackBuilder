@@ -12,6 +12,7 @@ class AnkiPackBuilderGUI:
         self.window.geometry("350x200")
         self.window.resizable(False, False)
         self.window.configure(bg="#202020")
+        self.window.iconbitmap("\lib\pic\APB_icon.ico")
 
         self.version_label = tk.Label(self.window, text="Version: " + get_version_number(), bg="#202020", fg="white")
         self.version_label.place(x=10, y=180)
